@@ -15,10 +15,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        DashoBoard 
-        <button className="btn btn-primary">Test</button>
-      </main>
     </>
   );
 }
