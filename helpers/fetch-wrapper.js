@@ -1,8 +1,10 @@
 import { userService } from '@/service/user.service';
-import getConfig from 'next/config';
 import axios from 'axios';
+import nextConfig from '@/next.config.mjs';
 
-const { publicRuntimeConfig } = getConfig();
+nextConfig
+
+const { publicRuntimeConfig } = nextConfig;
 
 export const fetchWrapper = {
     get,
