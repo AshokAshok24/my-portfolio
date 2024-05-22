@@ -49,7 +49,8 @@ const HomeContainer = ({ children }) => {
                     <Services />
 
                     <Testimonial />
-
+                    
+                    <Contactus />
 
                 </main>
 
