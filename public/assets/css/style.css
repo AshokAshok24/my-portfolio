@@ -241,11 +241,12 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/ashok.jpeg") top center;
+  background: url("../img/back.jpg") no-repeat fixed center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 20% 30%;
-  opacity: 0.6;
+
+  background-position: 0% 30%;
+  
 }
 
 #hero:before {
