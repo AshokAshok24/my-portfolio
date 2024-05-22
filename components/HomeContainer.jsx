@@ -12,6 +12,7 @@ import Services from './Services';
 import Testimonial from './Testimonial';
 import Contactus from './Contactus';
 import Hero from './Hero';
+import Footer from './Footer';
 require("aos/dist/aos.js");
 
 
@@ -49,12 +50,12 @@ const HomeContainer = ({ children }) => {
                     <Services />
 
                     <Testimonial />
-                    
+
                     <Contactus />
 
                 </main>
 
-
+                <Footer />
 
             </div>
         </React.Fragment>
