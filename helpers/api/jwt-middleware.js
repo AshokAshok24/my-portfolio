@@ -1,8 +1,9 @@
 const expressJwt = require('express-jwt');
 const util = require('util');
-import getConfig from 'next/config';
+import nextConfig from '@/next.config.mjs';
 
-const { serverRuntimeConfig } = getConfig();
+
+const { serverRuntimeConfig } = nextConfig;
 
 export { jwtMiddleware };
 
