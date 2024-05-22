@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer';
 
 const Header = () => {
 
@@ -13,7 +14,7 @@ const Header = () => {
                 <div class="d-flex flex-column">
 
                     <div class="profile">
-                        <img src="assets/img/ashok.jpeg" alt="" class="img-fluid rounded-circle" style={{height:"150px",width:"150px"}}/>
+                        <img src="assets/img/ashok.jpeg" alt="" class="img-fluid rounded-circle" style={{ height: "150px", width: "150px" }} />
                         <h1 class="text-light"><a href="index.html">Ashok Kumar</a></h1>
                         <div class="social-links mt-3 text-center">
                             <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -37,6 +38,8 @@ const Header = () => {
 
                 </div>
             </header>
+
+            
 
 
         </React.Fragment>
