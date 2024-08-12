@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const About = () => {
@@ -25,7 +26,7 @@ const About = () => {
                                 <div class="col-lg-6">
                                     <ul>
                                         <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>24 June 2000</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><Link href="https://my-portfolio-eight-alpha-27.vercel.app">View Here</Link></span></li>
                                         <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8220315426</span></li>
                                         <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tirupur, TamilNadu</span></li>
                                     </ul>
