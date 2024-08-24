@@ -9,7 +9,9 @@ const About = () => {
 
                     <div class="section-title">
                         <h2>About</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>
+                            Experienced Software Engineer with a strong background in developing scalable applications using Next.js, aiming to enhance user experience and streamline data management processes. Proven ability to deliver effective solutions in backend development and real-time data synchronization.
+                        </p>
                     </div>
 
                     <div class="row">
@@ -18,9 +20,8 @@ const About = () => {
                         </div>
                         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                             <h3>Full Stack Developer</h3>
-                            <p class="fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.
+                            <p class="fst-italic" style={{ color: "black", fontWeight: 'bolder' }}>
+                                ReactJS, NextJS, NodeJS, ExpressJS, Mysql, SQLServer, MongoDB, postgreSQL, HTML, CSS, Bootstrap, Prisma, Swagger
                             </p>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -34,15 +35,14 @@ const About = () => {
                                 <div class="col-lg-6">
                                     <ul>
                                         <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>ashok246445@gmail.com</span></li>
-                                        <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.sc (computer science)</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ashok246445@gmail.com</span></li>
+                                        <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>-</span></li>
                                     </ul>
                                 </div>
                             </div>
                             <p>
-                                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                                A skilled and dedicated Full Stack Developer with expertise in modern web development technologies. Proficient in both frontend and backend frameworks, with experience in databases including MySQL, SQLServer, MongoDB, and PostgreSQL. Adept at creating responsive and dynamic web applications using ReactJS, NextJS, NodeJS, and ExpressJS. Strong problem-solving abilities and a passion for continuous learning. Always ready to take on new challenges and deliver high-quality solutions.
                             </p>
                         </div>
                     </div>
