@@ -727,8 +727,8 @@ section {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
-  /* color: #149ddd; */
+.services .icon-box:hover .icon img {
+  transform: scale(.1);
 }
 
 .services .title {
