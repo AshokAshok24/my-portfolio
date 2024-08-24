@@ -8,7 +8,7 @@ const Facts = () => {
 
                     <div class="section-title">
                         <h2>Facts</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>Here are some key milestones that highlight our dedication and commitment to excellence. These achievements are a testament to the hard work and satisfaction we provide to our clients.</p>
                     </div>
 
                     <div class="row no-gutters">
