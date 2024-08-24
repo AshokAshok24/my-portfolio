@@ -33,7 +33,8 @@ const Contactus = () => {
                                     <p>+91 8220315426</p>
                                 </div>
 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style={{ border: "0px", width: "100%", height: "300px" }} allowfullscreen></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d350.1712354661749!2d77.35332406224397!3d11.088209496452501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1724516605414!5m2!1sen!2sin" frameborder="0" style={{ border: "0px", width: "100%", height: "300px" }} allowfullscreen></iframe>
+                                {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d350.1712354661749!2d77.35332406224397!3d11.088209496452501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1724516605414!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
                             </div>
 
                         </div>
