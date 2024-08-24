@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Portfolio = () => {
@@ -28,8 +29,8 @@ const Portfolio = () => {
                             <div class="portfolio-wrap">
                                 <img src="assets/img/ashok.jpeg" class="img-fluid" alt="" />
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    <Link href="assets/img/ashok.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></Link>
+                                    <Link href="assets/img/ashok.jpeg" title="More Details"><i class="bx bx-link"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -38,8 +39,8 @@ const Portfolio = () => {
                             <div class="portfolio-wrap">
                                 <img src="assets/img/ashok-side.jpg" class="img-fluid" alt="" />
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    <Link href="assets/img/ashok-side.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></Link>
+                                    <Link href="assets/img/ashok-side" title="More Details"><i class="bx bx-link"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +49,8 @@ const Portfolio = () => {
                             <div class="portfolio-wrap">
                                 <img src="assets/img/back.jpg" class="img-fluid" alt="" />
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    <Link href="assets/img/back.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></Link>
+                                    <Link href="assets/img/back.jpg" title="More Details"><i class="bx bx-link"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +59,8 @@ const Portfolio = () => {
                             <div class="portfolio-wrap">
                                 <img src="assets/img/straight.jpeg" class="img-fluid" alt="" />
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    <Link href="assets/img/straight.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></Link>
+                                    <Link href="assets/img/straight.jpeg" title="More Details"><i class="bx bx-link"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -68,8 +69,8 @@ const Portfolio = () => {
                             <div class="portfolio-wrap">
                                 <img src="assets/img/waterfall.jpeg" class="img-fluid" alt="" />
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    <Link href="assets/img/waterfall.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></Link>
+                                    <Link href="assets/img/waterfall.jpeg" title="More Details"><i class="bx bx-link"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -78,8 +79,8 @@ const Portfolio = () => {
                             <div class="portfolio-wrap">
                                 <img src="assets/img/jeep.jpeg" class="img-fluid" alt="" />
                                 <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                    <Link href="assets/img/jeep.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></Link>
+                                    <Link href="assets/img/jeep.jpeg" title="More Details"><i class="bx bx-link"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +89,7 @@ const Portfolio = () => {
 
                 </div>
             </section>
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 
