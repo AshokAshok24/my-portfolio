@@ -31,7 +31,7 @@ export default function Document() {
       <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" async></script>
       <script src="/assets/vendor/swiper/swiper-bundle.min.js" async></script>
       {/* <script src="/assets/vendor/typed.js/typed.umd.js" async></script> */}
-      <script src="/assets/vendor/waypoints/noframework.waypoints.js" async></script> 
+      <script src="/assets/vendor/waypoints/noframework.waypoints.js" async></script>
 
       <script src="/assets/js/main.js" async></script>
     </Html>
