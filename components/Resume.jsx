@@ -46,9 +46,22 @@ const Resume = () => {
                         </div>
                         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="resume-title">Professional Experience</h3>
+                            
+                            <div class="resume-item">
+                                <h4>MERN Stack Developer</h4>
+                                <h5>Sep 2024 - Present</h5>
+                                <p><em>J Pencil Pvt Ltd, Coimbatore, TamilNadu</em></p>
+                                <ul>
+                                    <li>
+                                    Developed and implemented ERP solutions, collaborating closely with cross-functional teams to streamline business processes and enhance system efficiency.
+                                    </li>
+                                    <li>Managed up to 2 projects at a given time while under pressure</li>
+                                </ul>
+                            </div>
+
                             <div class="resume-item">
                                 <h4>Full Stack Developer</h4>
-                                <h5>Feb 2024 - Present</h5>
+                                <h5>Feb 2024 - Aug 2024</h5>
                                 <p><em>V3 Analytics Pvt Ltd, Madurai, TamilNadu</em></p>
                                 <ul>
                                     <li>
@@ -58,6 +71,7 @@ const Resume = () => {
                                     <li>Managed up to 3 projects at a given time while under pressure</li>
                                 </ul>
                             </div>
+
                             <div class="resume-item">
                                 <h4>BackEnd Developer</h4>
                                 <h5>June 2023 - Jan 2024</h5>
