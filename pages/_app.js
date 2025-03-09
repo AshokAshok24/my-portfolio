@@ -5,6 +5,8 @@ import HomeContainer from "@/components/HomeContainer";
 import AdminPage from "@/components/AdminPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -15,24 +17,23 @@ export default function App({ Component, pageProps }) {
     AOS.init();
   }, []);
 
-  useEffect(() => {
-    console.log("Current Pathname:", router.pathname);
-  }, [router.pathname]);
-
-  // ✅ Prevent hydration mismatch
   if (!isClient || !router.isReady) {
     return <p>Loading...</p>;
   }
 
-  // ✅ Show only AdminPage when visiting `/admin`
+
   if (router.pathname.startsWith("/admin")) {
     return <AdminPage />;
   }
 
-  // ✅ For all other pages, use HomeContainer
   return (
-    <HomeContainer>
-      <Component {...pageProps} />
-    </HomeContainer>
+    <>
+      {/* ✅ Global Toast Notifications */}
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} />
+
+      <HomeContainer>
+        <Component {...pageProps} />
+      </HomeContainer>
+    </>
   );
 }
