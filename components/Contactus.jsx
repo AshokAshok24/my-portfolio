@@ -1,6 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Contactus = () => {
+
+    const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState("");
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        setError("");
+        setSuccess("");
+
+        try {
+            const response = await fetch("/api/sendMail", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                setSuccess(result.message);
+                setFormData({ name: "", email: "", subject: "", message: "" });
+            } else {
+                setError(result.message);
+            }
+        } catch (err) {
+            setError("Something went wrong!");
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <React.Fragment>
             <section id="contact" class="contact">
@@ -40,31 +78,31 @@ const Contactus = () => {
                         </div>
 
                         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <label for="name">Your Name</label>
-                                        <input type="text" name="name" class="form-control" id="name" required />
+                            <form onSubmit={handleSubmit} className="php-email-form">
+                                <div className="row">
+                                    <div className="form-group col-md-6">
+                                        <label htmlFor="name">Your Name</label>
+                                        <input type="text" name="name" className="form-control" value={formData.name} onChange={handleChange} required />
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="name">Your Email</label>
-                                        <input type="email" class="form-control" name="email" id="email" required />
+                                    <div className="form-group col-md-6">
+                                        <label htmlFor="email">Your Email</label>
+                                        <input type="email" name="email" className="form-control" value={formData.email} onChange={handleChange} required />
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="name">Subject</label>
-                                    <input type="text" class="form-control" name="subject" id="subject" required />
+                                <div className="form-group">
+                                    <label htmlFor="subject">Subject</label>
+                                    <input type="text" name="subject" className="form-control" value={formData.subject} onChange={handleChange} required />
                                 </div>
-                                <div class="form-group">
-                                    <label for="name">Message</label>
-                                    <textarea class="form-control" name="message" rows="10" required></textarea>
+                                <div className="form-group">
+                                    <label htmlFor="message">Message</label>
+                                    <textarea name="message" className="form-control" rows="5" value={formData.message} onChange={handleChange} required></textarea>
                                 </div>
-                                <div class="my-3">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                {loading && <div className="loading">Sending...</div>}
+                                {error && <div className="error-message">{error}</div>}
+                                {success && <div className="sent-message">{success}</div>}
+                                <div className="text-center">
+                                    <button type="submit" disabled={loading}>Send Message</button>
                                 </div>
-                                <div class="text-center"><button type="submit">Send Message</button></div>
                             </form>
                         </div>
 
